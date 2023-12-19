@@ -1,0 +1,56 @@
+.TH INTERNCTL 1 "March 2023" "internsctl v0.1.0" "User Commands"
+.SH NAME
+internsctl \- custom Linux command for various operations
+.SH SYNOPSIS
+.B internsctl
+[\fIOPTION\fR]...
+.SH DESCRIPTION
+This manual page documents the custom Linux command \fBinternsctl\fR, which provides various functionalities for system operations.
+.SH OPTIONS
+.TP
+\fB\-\-help\fR
+Display help information and usage guidelines.
+.TP
+\fB\-\-version\fR
+Display the version of the \fBinternsctl\fR command.
+.TP
+\fBcpu getinfo\fR
+Get CPU information.
+.TP
+\fBmemory getinfo\fR
+Get memory information.
+.TP
+\fBuser create <username>\fR
+Create a new user with the specified username.
+.TP
+\fBuser list\fR
+List all regular users.
+.TP
+\fBuser list \-\-sudo\-only\fR
+List users with sudo permissions.
+.TP
+\fBfile getinfo <file\-name>\fR
+Get information about a file.
+.TP
+\fBfile getinfo \[options\] <file\-name>\fR
+Get specific information about a file using options.
+.SH EXAMPLES
+.B internsctl cpu getinfo
+Display CPU information.
+.B internsctl user create john_doe
+Create a new user with the username \fBjohn_doe\fR.
+.SH SEE ALSO
+.BR lscpu (1),
+.BR free (1),
+.BR useradd (8),
+.BR getent (1),
+.BR stat (1)
+.SH AUTHOR
+Written by Your Name.
+.SH REPORTING BUGS
+Report bugs to your@email.com.
+.SH COPYRIGHT
+Copyright © 2023 Your Organization. This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+.SH BUGS
+None known.
